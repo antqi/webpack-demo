@@ -7,6 +7,11 @@ const PATHS = {
 }
 
 module.exports = {
+  devServer: {
+    host: process.env.HOST,
+    // port: process.env.PORT
+    port: 9222
+  },
   entry: {
     app: PATHS.app
   },
