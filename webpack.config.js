@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const DashboardPlugin = require('webpack-dashboard/plugin')
 
 const PATHS = {
   app: path.join(__dirname, 'app'),
@@ -36,5 +37,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack demo',
     }),
+    new DashboardPlugin()
   ],
 }
